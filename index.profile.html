@@ -9,21 +9,26 @@
     <title>Document</title>
 </head>
 <body>
-<main class="container d-flex justify-content-center align-items-center w-50 bg-dark text-white" >
+<main class="container-fluid d-flex justify-content-center align-items-center bg-dark text-white" >
 
-    <div class="container mt-5 pt-5" >
+    <div class="container mt-5 w-50 pt-5" >
         <h1>Edit Prifile</h1>
         <hr class="" >
         <div class="container d-flex" >
-            <div class="row" >
-                <div class="col-6" >
-                    <img style="width: 60px;" src="Netflix-assets/assets/avatar.png" alt="">
-                    <div></div>
+            <div class="row " >
+                <div class="col-6 d-flex justify-content-end" >
+
+                    
+                    <div>
+                        <img style="width: 100px;" src="Netflix-assets/assets/avatar.png" alt="">
+                    </div>
                 </div>
                 <div class="col-6" >
+                    
                     <input class="bg-secondary" type="text">
-                    <div class="dropdown bg-dark border border-secondary my-4">
-                        <button class="btn text-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <p class="text-secondary mt-3" >Lenguage</p>
+                    <div class="dropdown bg-dark border border-secondary mb-1 d-flex justify-content-end">
+                        <button class="btn text-white dropdown-toggle w-75" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                           English
                         </button>
                         <ul class="dropdown-menu bg-dark">
@@ -32,6 +37,42 @@
                           <li><a class="dropdown-item text-white" href="#">German</a></li>
                         </ul>
                       </div>
+                      <hr>
+                      <p>Maturity Settings:</p>
+                      <button class="bg-secondary text-white border border-secondary" > ALL MATURITY RATINGS</button>
+                      <p>Show titles of all maturity ratings for this profile</p>
+                      <button class="bg-dark text-secondary border border-secondary" style="width: 90px;" >EDIT</button>
+                      <hr>
+                      <p>Autoplay controls</p>
+                      <div class="input-group mb-3">
+                        <div class="input-group-text bg-secondary">
+                          <input class="form-check-input mt-0 bg-secondary" type="checkbox" value="" aria-label="Checkbox for following text input">
+                        </div>
+                        <input type="text" class="form-control bg-dark border border-secondary" aria-label="Text input with checkbox">
+                      </div>
+                      <div class="input-group mb-3">
+                        <div class="input-group-text bg-secondary ">
+                          <input class="form-check-input mt-0 bg-secondary" type="checkbox" value="" aria-label="Checkbox for following text input">
+                        </div>
+                        <input type="text" class="form-control bg-dark border border-secondary" aria-label="Text input with checkbox">
+                      </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <hr>
+        <div class="container">
+            <div class="row d-flex mb-3 ">
+                <div class="col-4 " >
+                    <button class="bg-dark text-secondary border border-secondary" >SAVE</button>
+                </div>
+                <div class="col-4 " >
+                    <button  class="bg-dark text-secondary border border-secondary">CANCEL</button>
+                </div>
+                <div class="col-4" >
+                    <button  class="bg-dark text-secondary border border-secondary">DELETE PROFILE</button>
                 </div>
             </div>
 
